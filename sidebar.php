@@ -5,7 +5,9 @@
   <h4 class="section">Recherche</h4>
   <?php get_search_form(); ?>
   <!-- Archives -->
-  <h4 class="section">Archives</h4>
+
+<!--
+<h4 class="section">Archives</h4>
   <ul class="list">
     <?php wp_get_archives('type=yearly'); ?>
   </ul>
@@ -15,12 +17,17 @@
   <ul class="list">
     <?php wp_get_archives('type=daily'); ?>
   </ul>
+-->
+
   <!-- Pages -->
-  <ul class="list">
+  <!--
+<ul class="list">
     <?php wp_list_pages(); ?>
   </ul>
+-->
   <!-- Derniers articles -->
-  <h4 class="section">Derniers articles</h4>
+ <!--
+ <h4 class="section">Derniers articles</h4>
   <ul class="list">
     <?php wp_reset_postdata();
     query_posts('posts_per_page=5');
@@ -29,4 +36,5 @@
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
   </ul>
+-->
 </div>

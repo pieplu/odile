@@ -11,9 +11,11 @@
           <?php the_content(); ?>
         </div>
         <?php the_tags('<p class="post-tags">Tags : ', ', ', '</p>'); ?>
-        <div class="post-comments">
+
+		<div class="post-comments">
           <?php comments_template(); ?>
         </div>
+
       </div>
     <?php endwhile; ?>
   <?php endif; ?>
