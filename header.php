@@ -16,7 +16,7 @@
 				'theme_location'  => '',
 				'menu'            => '',
 				'container'       => 'div',
-				'container_class' => '',
+				'container_class' => 'menuTopContainer w100',
 				'container_id'    => '',
 				'menu_class'      => 'menu',
 				'menu_id'         => '',
@@ -33,5 +33,4 @@
 			wp_nav_menu( $menu );
 			
 		?>
-		 <div class="icon-nav"></div>
       </header>

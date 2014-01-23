@@ -12,12 +12,14 @@
  * 3. Gutter value for grid layouts
  * 4. Base font size: must be unitless
  * 5. Font stacks
+ * 6. Size menu
  */
 /* 1 */
 /* 1 */
 /* 2 */
 /* 3 */
 /* 4 */
+/* 5 */
 /* 5 */
 /* 5 */
 /*----------------------------*\
@@ -34,6 +36,9 @@
  */
 /**
  * Mixin to prefix properties
+ */
+/**
+ * Mixin to vertical alignement
  */
 /*----------------------------*\
  * Soft reset                 *
@@ -52,66 +57,68 @@ html, body {
 
 /* line 15, ../sass/helpers/_reset.scss */
 ul, ol {
-  padding-left: 2em;
-}
-/* line 18, ../sass/helpers/_reset.scss */
-ul.unstyled, ol.unstyled {
+  padding-left: 0px;
   list-style: none;
 }
+/* line 18, ../sass/helpers/_reset.scss */
+ul.styled, ol.styled {
+  padding-left: 2em;
+  list-style: disc;
+}
 
-/* line 23, ../sass/helpers/_reset.scss */
+/* line 24, ../sass/helpers/_reset.scss */
 code, pre, samp, kbd {
   white-space: pre-wrap;
   font-family: "Consolas", "DejaVu Sans Mono", "Courier", monospace;
   line-height: 1em;
 }
 
-/* line 29, ../sass/helpers/_reset.scss */
+/* line 30, ../sass/helpers/_reset.scss */
 code, kbd, mark {
   border-radius: 2px;
 }
 
-/* line 33, ../sass/helpers/_reset.scss */
+/* line 34, ../sass/helpers/_reset.scss */
 em {
   font-style: italic;
 }
 
-/* line 37, ../sass/helpers/_reset.scss */
+/* line 38, ../sass/helpers/_reset.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 41, ../sass/helpers/_reset.scss */
+/* line 42, ../sass/helpers/_reset.scss */
 kbd {
   padding: 0 2px;
   border: 1px solid #999;
 }
 
-/* line 46, ../sass/helpers/_reset.scss */
+/* line 47, ../sass/helpers/_reset.scss */
 code {
   padding: 2px 4px;
   background: rgba(0, 0, 0, 0);
   color: #b11;
 }
 
-/* line 52, ../sass/helpers/_reset.scss */
+/* line 53, ../sass/helpers/_reset.scss */
 mark {
   padding: 2px 4px;
   background: #ff0;
 }
 
-/* line 57, ../sass/helpers/_reset.scss */
+/* line 58, ../sass/helpers/_reset.scss */
 sup, sub {
   vertical-align: 0;
   position: relative;
 }
 
-/* line 62, ../sass/helpers/_reset.scss */
+/* line 63, ../sass/helpers/_reset.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 66, ../sass/helpers/_reset.scss */
+/* line 67, ../sass/helpers/_reset.scss */
 sub {
   top: .5ex;
 }
@@ -119,7 +126,7 @@ sub {
 /**
  * Avoid top margins on first content element 
  */
-/* line 76, ../sass/helpers/_reset.scss */
+/* line 77, ../sass/helpers/_reset.scss */
 p:first-child, ul:first-child, ol dl:first-child,
 blockquote:first-child, pre:first-child,
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
@@ -129,7 +136,7 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 /**
  * Avoid margins on nested elements 
  */
-/* line 85, ../sass/helpers/_reset.scss */
+/* line 86, ../sass/helpers/_reset.scss */
 li p, li ul, li ol {
   margin-top: 0;
   margin-bottom: 0;
@@ -138,7 +145,7 @@ li p, li ul, li ol {
 /**
  * Prevents those to break out of their container
  */
-/* line 96, ../sass/helpers/_reset.scss */
+/* line 97, ../sass/helpers/_reset.scss */
 img, table, td,
 blockquote, code, pre,
 textarea, input, video {
@@ -151,27 +158,27 @@ textarea, input, video {
  * 2. Bugfix for Gmap3 
  * 3. Remove blue border on IE
  */
-/* line 106, ../sass/helpers/_reset.scss */
+/* line 107, ../sass/helpers/_reset.scss */
 img {
   vertical-align: middle;
   width: auto;
   /* 1 */
 }
-/* line 113, ../sass/helpers/_reset.scss */
+/* line 114, ../sass/helpers/_reset.scss */
 img :not(.gm-style),
 img :not(.gmnoscreen),
 img :not(.gmnoprint) {
   height: auto !important;
   /* 2 */
 }
-/* line 121, ../sass/helpers/_reset.scss */
+/* line 122, ../sass/helpers/_reset.scss */
 img .gm-style,
 img .gmnoscreen,
 img .gmnoprint {
   max-width: none !important;
   /* 2 */
 }
-/* line 126, ../sass/helpers/_reset.scss */
+/* line 127, ../sass/helpers/_reset.scss */
 a img {
   border: 0;
   /* 3 */
@@ -180,7 +187,7 @@ a img {
 /**
  * Hide script and style tags in case of table mode
  */
-/* line 135, ../sass/helpers/_reset.scss */
+/* line 136, ../sass/helpers/_reset.scss */
 body > script,
 body > style {
   display: none !important;
@@ -190,7 +197,7 @@ body > style {
  * Force word wrapping on small screens
  */
 @media (max-width: 768px) {
-  /* line 145, ../sass/helpers/_reset.scss */
+  /* line 146, ../sass/helpers/_reset.scss */
   div, textarea,
   table, td, th,
   code, pre, samp {
@@ -1491,12 +1498,13 @@ html {
 /**
  * 1. Put the base font-size at 14px
  */
-/* line 21, ../sass/modules/_typography.scss */
+/* line 20, ../sass/modules/_typography.scss */
 body {
-  font-size: 14px;
+  font-size: 10px;
   font-size: 1rem;
   /* 1 */
   background: white;
+  font-weight: 300;
 }
 
 /**
@@ -1519,7 +1527,7 @@ h1, .h1-like {
   margin: 0.65625em 0 0 0;
   line-height: 1.3125;
   font-size: 32px;
-  font-size: 2.28571rem;
+  font-size: 3.2rem;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
@@ -1527,7 +1535,7 @@ h2, .h2-like {
   margin: 0.75em 0 0 0;
   line-height: 1.5;
   font-size: 28px;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
@@ -1535,7 +1543,7 @@ h3, .h3-like {
   margin: 0.875em 0 0 0;
   line-height: 1.75;
   font-size: 24px;
-  font-size: 1.71429rem;
+  font-size: 2.4rem;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
@@ -1543,7 +1551,7 @@ h4, .h4-like {
   margin: 1.05em 0 0 0;
   line-height: 1.05;
   font-size: 20px;
-  font-size: 1.42857rem;
+  font-size: 2rem;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
@@ -1551,7 +1559,7 @@ h5, .h5-like {
   margin: 1.16667em 0 0 0;
   line-height: 1.16667;
   font-size: 18px;
-  font-size: 1.28571rem;
+  font-size: 1.8rem;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
@@ -1559,7 +1567,7 @@ h6, .h6-like {
   margin: 1.3125em 0 0 0;
   line-height: 1.3125;
   font-size: 16px;
-  font-size: 1.14286rem;
+  font-size: 1.6rem;
 }
 
 /**
@@ -1573,31 +1581,31 @@ h6, .h6-like {
 /* line 73, ../sass/modules/_typography.scss */
 .smaller {
   font-size: 10px;
-  font-size: 0.71429rem;
+  font-size: 1rem;
 }
 
 /* line 73, ../sass/modules/_typography.scss */
 .small {
   font-size: 12px;
-  font-size: 0.85714rem;
+  font-size: 1.2rem;
 }
 
 /* line 73, ../sass/modules/_typography.scss */
 .big {
   font-size: 16px;
-  font-size: 1.14286rem;
+  font-size: 1.6rem;
 }
 
 /* line 73, ../sass/modules/_typography.scss */
 .bigger {
   font-size: 18px;
-  font-size: 1.28571rem;
+  font-size: 1.8rem;
 }
 
 /* line 73, ../sass/modules/_typography.scss */
 .biggest {
   font-size: 20px;
-  font-size: 1.42857rem;
+  font-size: 2rem;
 }
 
 /*----------------------------*\
@@ -1737,14 +1745,46 @@ h6, .h6-like {
     /* 2 */
   }
 }
-/* line 1, ../sass/site/_site.scss */
+/* 6 */
+/* line 4, ../sass/site/_site.scss */
+#menu-menu-top {
+  text-align: center;
+  font-size: 14px;
+}
+/* line 8, ../sass/site/_site.scss */
 #menu-menu-top > li {
-  float: left;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 38px;
+  margin: 0px 15px;
+}
+/* line 12, ../sass/site/_site.scss */
+#menu-menu-top > li a {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e85546;
+}
+/* line 19, ../sass/site/_site.scss */
+#menu-menu-top > li a:hover {
+  color: rgba(232, 85, 70, 0.77);
 }
 
-/* line 6, ../sass/site/_site.scss */
-.menu-menu-top-container {
-  position: relative;
-  height: 40px;
-  background-color: #e85546;
+/* line 26, ../sass/site/_site.scss */
+.menuTopContainer {
+  position: absolute;
+  z-index: 100;
+  margin-top: -38px;
+  height: 38px;
+  background-color: rgba(255, 255, 235, 0.83);
 }

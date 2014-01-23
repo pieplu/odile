@@ -1,10 +1,32 @@
-#menu-menu-top > li{
-	float: left;
 
+$hauteurMenu: 38px; /* 6 */
+
+#menu-menu-top{
+	
+	text-align: center;
+	font-size: 14px;
+> li{
+	@include inline-block(middle);
+	height:$hauteurMenu;
+	margin: 0px 15px;
+	a{
+	  display: block;
+	  @include vertical-align;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  color:rgb(232, 85, 70);
+	}
+	a:hover{
+	  color:rgba(232, 85, 70,0.77);
+	}
+  }
 }
 
-.menu-menu-top-container{
-	position: relative;
-	height: 40px;
-	background-color: rgb(232, 85, 70);
+
+.menuTopContainer{
+	position: absolute;
+	z-index: 100;
+	margin-top: -$hauteurMenu;
+	height: $hauteurMenu;
+	background-color: rgba(255,255,235,0.83);
 }

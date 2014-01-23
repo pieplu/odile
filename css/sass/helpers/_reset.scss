@@ -13,10 +13,11 @@ html, body {
 }
 
 ul, ol {
-  padding-left: 2em;
-
-  &.unstyled {
-    list-style: none;
+  padding-left: 0px;
+  list-style: none;
+  &.styled {
+  	padding-left: 2em;
+    list-style: disc;
   }
 }
 
