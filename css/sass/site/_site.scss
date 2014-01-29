@@ -1,6 +1,6 @@
 
 $hauteurMenu: 38px; /* 6 */
-
+$hauteurHeader: 400px;
 #menu-menu-top{
 	
 	text-align: center;
@@ -29,4 +29,19 @@ $hauteurMenu: 38px; /* 6 */
 	margin-top: -$hauteurMenu;
 	height: $hauteurMenu;
 	background-color: rgba(255,255,235,0.83);
+}
+
+
+
+// Meta-slider Header
+
+#metaslider_container_43{
+    overflow: hidden;
+    height: $hauteurHeader;
+    .flexslider{
+	    height: $hauteurHeader !important;
+    }
+    img{
+	    @include prefix("filter", blur(10px));
+    }
 }

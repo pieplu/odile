@@ -1679,11 +1679,11 @@ h6, .h6-like {
    */
   /* line 39, ../sass/partials/_print.scss */
   img {
+    filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    filter: grayscale(100%);
   }
 
   /**
@@ -1787,4 +1787,22 @@ h6, .h6-like {
   margin-top: -38px;
   height: 38px;
   background-color: rgba(255, 255, 235, 0.83);
+}
+
+/* line 38, ../sass/site/_site.scss */
+#metaslider_container_43 {
+  overflow: hidden;
+  height: 400px;
+}
+/* line 41, ../sass/site/_site.scss */
+#metaslider_container_43 .flexslider {
+  height: 400px !important;
+}
+/* line 44, ../sass/site/_site.scss */
+#metaslider_container_43 img {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
 }
