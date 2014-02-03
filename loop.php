@@ -1,4 +1,6 @@
 <?php if (have_posts()) : ?>
+
+<button class="css1">★ CHECKOUT ★</button>
   <?php while (have_posts()) : the_post(); ?>
     <div id="<?php the_ID(); ?>" <?php post_class(); ?>>
       <h3 class="post-title">
