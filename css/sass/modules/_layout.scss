@@ -17,6 +17,10 @@
 
 .wrapper {
 	width: 900px;
-	margin: 0 auto;
+	@extend %center;
 }
 
+.wrapPage {
+	width: 600px;
+	@extend %center;
+}

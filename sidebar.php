@@ -1,9 +1,10 @@
 <div class="side">
-  <!-- Bouton RSS -->
-  <a href="<?php bloginfo('rss2_url'); ?>">S'abonner au flux RSS</a>
+  
   <!-- Formulaire de recherche -->
   <h4 class="section">Recherche</h4>
   <?php get_search_form(); ?>
+  <!-- Bouton RSS -->
+  <a href="<?php bloginfo('rss2_url'); ?>">S'abonner au flux RSS</a>
   <!-- Archives -->
 
 <!--
