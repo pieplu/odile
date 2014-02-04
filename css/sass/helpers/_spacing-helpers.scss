@@ -47,3 +47,14 @@
 .pl1, .pls { padding-left: 10px; }
 .pl2, .plm { padding-left: 20px; }
 .pl3, .pll { padding-left: 30px; }
+
+
+
+@for $i from 0 through 100 {
+	@if $i % 5 == 0{
+		.Pml#{$i} { margin-left: #{$i}unquote("%"); };
+		.Pmt#{$i} { margin-top: #{$i}unquote("%"); };
+		.Pmr#{$i} { margin-right: #{$i}unquote("%"); };
+		.Pmb#{$i} { margin-bottom: #{$i}unquote("%"); };
+	}
+}
