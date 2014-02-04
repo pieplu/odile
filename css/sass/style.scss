@@ -48,6 +48,7 @@ $weight: 300; /* 5 */
 @import "modules/layout";          // Layout
 //import "modules/flexbox";         // Flexbox helpers
 @import "modules/typography";      // Typography baseline and vertical rythm
+@import "modules/mediaqueries";		// Responsive
 
 @import "partials/iefix";          // Some IE fixes
 @import "partials/print";          // Print stylesheet
