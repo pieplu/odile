@@ -1,4 +1,16 @@
-/* Typo */
+/* General */
+*:focus{
+		outline-color: $rougeOdile;
+}
+
+a {
+	color:$rougeOdile;
+	text-decoration: none;
+	@extend %transitionHov;
+	:hover{
+		@extend %transitionHov;
+	}
+}
 
 
 
@@ -17,7 +29,7 @@ $hauteurHeader: 400px;
 	  @extend %vertical-align;
 	  text-decoration: none;
 	  text-transform: uppercase;
-	  color:rgb(232, 85, 70);
+	  color:$rougeOdile;
 	}
 	a:hover{
 	  color:rgba(232, 85, 70,0.77);

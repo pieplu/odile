@@ -24,6 +24,7 @@
 /* 5 */
 /* 5 */
 /* 5 */
+/* #E85546 */
 /*----------------------------*\
  * Mixins                     *
 \*----------------------------*/
@@ -55,6 +56,15 @@
 /* line 17, ../sass/helpers/_placeholder.scss */
 .wrapper, .wrapPage {
   margin: 0 auto;
+}
+
+/* line 21, ../sass/helpers/_placeholder.scss */
+a, a :hover {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 /*----------------------------*\
@@ -1926,7 +1936,7 @@ input[type='submit']::-moz-focus-inner {
 
 /* line 18, ../sass/modules/_layout.scss */
 .wrapper {
-  width: 900px;
+  width: 800px;
 }
 
 /* line 23, ../sass/modules/_layout.scss */
@@ -1983,50 +1993,80 @@ caption, figure {
 
 /* line 47, ../sass/modules/_typography.scss */
 h1, .h1-like {
-  margin: 0.65625em 0 0 0;
-  line-height: 1.3125;
-  font-size: 32px;
-  font-size: 3.2rem;
+  margin: 0.38182em 0 0 0;
+  line-height: 0.76364;
+  font-weight: 300;
+  font-size: 55px;
+  color: #86c5ff;
+}
+/* line 53, ../sass/modules/_typography.scss */
+h1 a, .h1-like a {
+  color: #86c5ff;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
 h2, .h2-like {
-  margin: 0.75em 0 0 0;
-  line-height: 1.5;
-  font-size: 28px;
-  font-size: 2.8rem;
+  margin: 0.46667em 0 0 0;
+  line-height: 0.93333;
+  font-weight: 300;
+  font-size: 45px;
+  color: #86c5ff;
+}
+/* line 53, ../sass/modules/_typography.scss */
+h2 a, .h2-like a {
+  color: #86c5ff;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
 h3, .h3-like {
-  margin: 0.875em 0 0 0;
-  line-height: 1.75;
-  font-size: 24px;
-  font-size: 2.4rem;
+  margin: 0.55263em 0 0 0;
+  line-height: 1.10526;
+  font-weight: 300;
+  font-size: 38px;
+  color: #86c5ff;
+}
+/* line 53, ../sass/modules/_typography.scss */
+h3 a, .h3-like a {
+  color: #86c5ff;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
 h4, .h4-like {
   margin: 1.05em 0 0 0;
   line-height: 1.05;
+  font-weight: 300;
   font-size: 20px;
-  font-size: 2rem;
+  color: #86c5ff;
+}
+/* line 53, ../sass/modules/_typography.scss */
+h4 a, .h4-like a {
+  color: #86c5ff;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
 h5, .h5-like {
   margin: 1.16667em 0 0 0;
   line-height: 1.16667;
+  font-weight: 300;
   font-size: 18px;
-  font-size: 1.8rem;
+  color: #86c5ff;
+}
+/* line 53, ../sass/modules/_typography.scss */
+h5 a, .h5-like a {
+  color: #86c5ff;
 }
 
 /* line 47, ../sass/modules/_typography.scss */
 h6, .h6-like {
   margin: 1.3125em 0 0 0;
   line-height: 1.3125;
+  font-weight: 300;
   font-size: 16px;
-  font-size: 1.6rem;
+  color: #86c5ff;
+}
+/* line 53, ../sass/modules/_typography.scss */
+h6 a, .h6-like a {
+  color: #86c5ff;
 }
 
 /**
@@ -2037,31 +2077,31 @@ h6, .h6-like {
  * .bigger   => 18px
  * .biggest  => 20px
  */
-/* line 73, ../sass/modules/_typography.scss */
+/* line 76, ../sass/modules/_typography.scss */
 .smaller {
   font-size: 10px;
   font-size: 1rem;
 }
 
-/* line 73, ../sass/modules/_typography.scss */
+/* line 76, ../sass/modules/_typography.scss */
 .small {
   font-size: 12px;
   font-size: 1.2rem;
 }
 
-/* line 73, ../sass/modules/_typography.scss */
+/* line 76, ../sass/modules/_typography.scss */
 .big {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 73, ../sass/modules/_typography.scss */
+/* line 76, ../sass/modules/_typography.scss */
 .bigger {
   font-size: 18px;
   font-size: 1.8rem;
 }
 
-/* line 73, ../sass/modules/_typography.scss */
+/* line 76, ../sass/modules/_typography.scss */
 .biggest {
   font-size: 20px;
   font-size: 2rem;
@@ -2555,14 +2595,25 @@ h6, .h6-like {
     /* 2 */
   }
 }
-/* Typo */
+/* General */
+/* line 2, ../sass/site/_site.scss */
+*:focus {
+  outline-color: #ff8686;
+}
+
+/* line 6, ../sass/site/_site.scss */
+a {
+  color: #ff8686;
+  text-decoration: none;
+}
+
 /* 6 */
-/* line 7, ../sass/site/_site.scss */
+/* line 19, ../sass/site/_site.scss */
 #menu-menu-top {
   text-align: center;
   font-size: 14px;
 }
-/* line 11, ../sass/site/_site.scss */
+/* line 23, ../sass/site/_site.scss */
 #menu-menu-top > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -2573,19 +2624,19 @@ h6, .h6-like {
   height: 38px;
   margin: 0px 15px;
 }
-/* line 15, ../sass/site/_site.scss */
+/* line 27, ../sass/site/_site.scss */
 #menu-menu-top > li a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #e85546;
+  color: #ff8686;
 }
-/* line 22, ../sass/site/_site.scss */
+/* line 34, ../sass/site/_site.scss */
 #menu-menu-top > li a:hover {
   color: rgba(232, 85, 70, 0.77);
 }
 
-/* line 29, ../sass/site/_site.scss */
+/* line 41, ../sass/site/_site.scss */
 .menuTopContainer {
   position: absolute;
   z-index: 100;
@@ -2594,13 +2645,13 @@ h6, .h6-like {
   background-color: #fff;
 }
 
-/* line 43, ../sass/site/_site.scss */
+/* line 55, ../sass/site/_site.scss */
 #metaslider_container_43 {
   overflow: hidden;
   height: 400px;
   max-height: 100%;
 }
-/* line 47, ../sass/site/_site.scss */
+/* line 59, ../sass/site/_site.scss */
 #metaslider_container_43 .flexslider {
   height: 400px !important;
 }
