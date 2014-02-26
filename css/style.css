@@ -6,7 +6,7 @@
  * Sass version maintained by @HugoGiraudel
  * https://github.com/HugoGiraudel/KNACSS-Sass
  *
- * Forked by Alexis Piéplu @Pieplu
+ * Forked by Alexis Pieplu @Pieplu
  */
 /** 
  * 1. Enable support for old browsers (IE8-, Firefox 3.6)
@@ -114,7 +114,7 @@ kbd {
 /* line 47, ../sass/helpers/_reset.scss */
 code {
   padding: 2px 4px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.04);
   color: #b11;
 }
 
@@ -1031,7 +1031,7 @@ body > style {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  margin-right: -0.25em;
+  margin-right: -.25em;
 }
 
 /* Alignments (blocks and inline) */
@@ -1243,7 +1243,7 @@ img.right {
   padding: 0;
   margin-left: -20px;
   text-align: left;
-  letter-spacing: -0.31em;
+  letter-spacing: -.31em;
   text-rendering: optimizespeed;
 }
 /* line 22, ../sass/modules/_grids.scss */
@@ -1276,7 +1276,7 @@ img.right {
 /* line 44, ../sass/modules/_grids.scss */
 .opera:-o-prefocus,
 .grid > * {
-  word-spacing: -0.43em;
+  word-spacing: -.43em;
 }
 
 /* line 48, ../sass/modules/_grids.scss */
@@ -1498,7 +1498,7 @@ td {
 /* line 103, ../sass/modules/_tables.scss */
 .striped tbody tr:nth-child(odd) {
   background: #eee;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 /** 
@@ -1507,7 +1507,7 @@ td {
 /* line 111, ../sass/modules/_tables.scss */
 .striped-vert tr > :first-child {
   background: #eee;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 /*----------------------------*\
@@ -1685,11 +1685,11 @@ input[type='submit']::-moz-focus-inner {
   zoom: 1;
   *display: inline;
   position: relative;
-  top: -0.1em;
+  top: -.1em;
   margin: 0 .3em 0 0;
   font: 1.4em/1 sans-serif;
   color: #000;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   speak: none;
   /* 1 */
 }
@@ -1857,7 +1857,7 @@ input[type='submit']::-moz-focus-inner {
 .icon-mail.after:after {
   content: "\2709";
   font-size: 1.6em;
-  top: -0.05em;
+  top: -.05em;
 }
 
 /*----------------------------*\
@@ -1871,7 +1871,7 @@ input[type='submit']::-moz-focus-inner {
   padding: .5em;
   border-radius: .1em;
   border: 1px solid;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 /**
@@ -2555,13 +2555,14 @@ h6, .h6-like {
     /* 2 */
   }
 }
+/* Typo */
 /* 6 */
-/* line 4, ../sass/site/_site.scss */
+/* line 7, ../sass/site/_site.scss */
 #menu-menu-top {
   text-align: center;
   font-size: 14px;
 }
-/* line 8, ../sass/site/_site.scss */
+/* line 11, ../sass/site/_site.scss */
 #menu-menu-top > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -2572,19 +2573,19 @@ h6, .h6-like {
   height: 38px;
   margin: 0px 15px;
 }
-/* line 12, ../sass/site/_site.scss */
+/* line 15, ../sass/site/_site.scss */
 #menu-menu-top > li a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #e85546;
 }
-/* line 19, ../sass/site/_site.scss */
+/* line 22, ../sass/site/_site.scss */
 #menu-menu-top > li a:hover {
   color: rgba(232, 85, 70, 0.77);
 }
 
-/* line 26, ../sass/site/_site.scss */
+/* line 29, ../sass/site/_site.scss */
 .menuTopContainer {
   position: absolute;
   z-index: 100;
@@ -2593,13 +2594,13 @@ h6, .h6-like {
   background-color: #fff;
 }
 
-/* line 41, ../sass/site/_site.scss */
+/* line 43, ../sass/site/_site.scss */
 #metaslider_container_43 {
   overflow: hidden;
   height: 400px;
   max-height: 100%;
 }
-/* line 45, ../sass/site/_site.scss */
+/* line 47, ../sass/site/_site.scss */
 #metaslider_container_43 .flexslider {
   height: 400px !important;
 }

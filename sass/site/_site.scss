@@ -1,3 +1,6 @@
+/* Typo */
+
+
 
 $hauteurMenu: 38px; /* 6 */
 $hauteurHeader: 400px;
@@ -5,7 +8,7 @@ $hauteurHeader: 400px;
 	
 	text-align: center;
 	font-size: 14px;
-> li{
+  > li{
 	@include inline-block(middle);
 	height:$hauteurMenu;
 	margin: 0px 15px;
@@ -30,7 +33,6 @@ $hauteurHeader: 400px;
 	height: $hauteurMenu;
 	background-color: #fff;
 }
-
 
 
 
