@@ -20,6 +20,8 @@
 //<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
  
 $legacy-support-for-ie: true        !default; /* 1 */
 $legacy-support-for-mozilla: true   !default; /* 1 */
@@ -32,6 +34,7 @@ $gutter: 20px                       !default; /* 3 */
 $base-font-size: 10                 !default; /* 4 */
 
 $regular-font-stack: 'Open Sans', "Helvetica", "Arial", sans-serif; /* 5 */
+$text-font: 'Droid Serif', 'Georgia', serif;
 $monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 5 */
 $weight: 300; /* 5 */
 
