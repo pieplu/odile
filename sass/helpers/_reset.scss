@@ -72,8 +72,7 @@ sub {
  * Avoid top margins on first content element 
  */
 p, ul, ol dl,
-blockquote, pre,
-h1, h2, h3, h4, h5, h6 {
+blockquote, pre{
   &:first-child {
     margin-top: 0;
   }
@@ -137,9 +136,10 @@ body > style {
   display: none !important;
 }
 
-/**
+/*
+
  * Force word wrapping on small screens
- */
+
 @include mq(small) {
   div, textarea, 
   table, td, th, 
@@ -152,3 +152,4 @@ body > style {
     hyphens: auto;
   }
 }
+*/

@@ -1,14 +1,14 @@
 <?php if (have_posts()) : ?>
   <?php while (have_posts()) : the_post(); ?>
     <div id="<?php the_ID(); ?>" <?php post_class(); ?>>
-      <h3 class="post-title">
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-      </h3>
+      <h2 class="post-title upper">
+        <?php the_title(); ?>
+      </h2>
       <p class="post-info">
-        Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.
+        Posté le <?php the_date(); ?>.
       </p>
-      <div class="post-excerpt">
-        <?php the_excerpt(); ?>
+      <div class="post-content">
+        <?php the_content(); ?>
       </div>
     </div>
   <?php endwhile; ?>

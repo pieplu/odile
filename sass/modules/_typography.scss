@@ -37,20 +37,19 @@ caption, figure {
   margin: .75em 0 0;
 }
 
-$headings-size: 55 45 38 20 18 16;
+$headings-size: 65 55 38 20 18 16;
 
 @for $i from 1 through length($headings-size) {
   $selector    : "h#{$i}, .h#{$i}-like";
   $visual      : nth($headings-size, $i);
-  $line-height : if($i < 4, 42, 21);
+  $line-height : if($i < 4, 49, 21);
   
   #{$selector} {
-    margin: 21 / $visual * 1em (0) (0) (0);
-    line-height: $line-height / $visual;
+    margin: 0px 0px (23-$i)*1px 0px;
+    line-height: normal;/* $line-height / $visual; */
     font-weight: 300;
-    font-size: $visual *1px;
-    color:$bleuOdile;
-    a{ color:$bleuOdile; }
+    font-size: $visual * 1px;
+    color:$rougeFonceOdile;
   }
 }
 
@@ -76,4 +75,12 @@ $sizes:
   .#{$keyword} {
     @include rem($size-px);
   }
+}
+
+.upper{
+	text-transform: uppercase;
+}
+
+.lower{
+	text-transform: lowercase;
 }

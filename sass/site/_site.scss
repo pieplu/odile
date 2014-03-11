@@ -12,7 +12,9 @@ a {
 	}
 }
 
-
+body{
+	background-color: $bggris;
+}
 
 $hauteurMenu: 38px; /* 6 */
 $hauteurHeader: 400px;
@@ -48,6 +50,17 @@ $hauteurHeader: 400px;
 
 
 
+.post-info{
+	color:$gris1;
+}
+
+.post{
+	margin-bottom: 80px;
+	background-color: $grisBlanc;
+	border-radius: 4px;
+	padding: 25px;
+	@include prefix(box-shadow, 0 1px 2px rgba(100, 100, 100, 0.2));
+}
 
 
 // Meta-slider Header
